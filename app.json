@@ -7,8 +7,8 @@
         "video-extract",
         "pyrogram"
     ],
-    "repository": "https://github.com/Mswpresents/txttovdomy",
-    "success_url": "https://t.me/teamjaishriramofficial",
+    "repository": "https://github.com/Malang00/Txt-leech",
+    "success_url": "https://t.me/TheBossrobot",
     "stack": "container",
     "env": {
         "API_ID": {
