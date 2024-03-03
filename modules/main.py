@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**ℍɪɪ** ┈━═My Freind═━┈😎\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me /upload Command And Then Follow Few Steps..")
+    editable = await m.reply_text("**ℍɪɪ** ┈━═My Freind═━┈😎\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me /jaat Command And Then Follow Few Steps..")
 
 
 @bot.on_message(filters.command("stop"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["upload"]))
+@bot.on_message(filters.command(["jaat"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
@@ -76,7 +76,7 @@ async def account_login(bot: Client, m: Message):
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
+    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n please choose quality")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**'
+                cc = f'**{str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{Jaat}.mkv\n\n**𝔹ᴀᴛᴄʜ Name** » {raw_text0}\n\n**Downloaded By : **'
+                cc1 = f'**{str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{Jaat}.pdf\n\n**𝔹ᴀᴛᴄʜ** » {raw_text0}\n\n**Downloaded By : **'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
