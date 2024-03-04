@@ -104,9 +104,8 @@ async def account_login(bot: Client, m: Message):
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
-    highlighter  = f"️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'Robin':
-        MR = highlighter 
+    if raw_text3 == 'de':
+        MR = credit 
     else:
         MR = raw_text3
    
@@ -162,8 +161,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**{str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{Jaat}.mkv\n\n**𝔹ᴀᴛᴄʜ Name** » {raw_text0}\n\n**Downloaded By : **'
-                cc1 = f'**{str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{Jaat}.pdf\n\n**𝔹ᴀᴛᴄʜ** » {raw_text0}\n\n**Downloaded By : **'
+                cc = f'**{str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{Jaat}.mkv\n\n**𝔹ᴀᴛᴄʜ Name** » {raw_text0}\n\n**Downloaded By : {MR}**'
+                cc1 = f'**{str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{Jaat}.pdf\n\n**𝔹ᴀᴛᴄʜ** » {raw_text0}\n\n**Downloaded By : {MR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
